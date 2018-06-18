@@ -12,6 +12,39 @@ public class Employee {
 	private Integer dId;
 
 	private Department department;
+	
+	
+
+	public Employee(Integer empId, String empName, String gender, String email, Integer dId, Department department) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.gender = gender;
+		this.email = email;
+		this.dId = dId;
+		this.department = department;
+	}
+
+	public Employee(Integer empId, String empName, String gender, String email, Integer dId) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.gender = gender;
+		this.email = email;
+		this.dId = dId;
+	}
+
+	public Employee(Integer empId, String empName, String gender, String email) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.gender = gender;
+		this.email = email;
+	}
+
+	public Employee() {
+		super();
+	}
 
 	public Department getDepartment() {
 		return department;

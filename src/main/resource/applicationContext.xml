@@ -11,11 +11,11 @@
 	<!-- Spring的配置文件，这里主要配置和业务逻辑有关的 -->
 	<!-- 数据源、事物控制 -->
 	<context:component-scan base-package="com.huawei.support.sidekick">
-		<context:exclude-filter type="annotation"
-			expression="org.springframework.stereotype.Controller " />
 	</context:component-scan>
+	
 	<context:property-placeholder
 		location="classpath:jdbc.properties" />
+		
 	<bean id="poolDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 		<property name="jdbcUrl" value="${jdbc.jdbcUrl}"></property>
 		<property name="driverClass" value="${jdbc.driverClass}"></property>
@@ -27,7 +27,7 @@
 	<bean id="sqlSessionFactory"
 		class="org.mybatis.spring.SqlSessionFactoryBean">
 		<!-- 指定mybaits全局配置文件的位置 -->
-		<property name="configLocation" value="classpath:mybaits-config.xml"></property>
+		<property name="configLocation" value="classpath:mybatis-config.xml"></property>
 		<property name="dataSource" ref="poolDataSource"></property>
 		<property name="mapperLocations" value="classpath:mapper/*.xml"></property>
 	</bean>
@@ -40,6 +40,8 @@
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="poolDataSource"></property>
 	</bean>
+	
+	<tx:annotation-driven/>
 	
 	<!--  开启基于注解的事务，使用xml配置形式的事务 -->
 	<aop:config>

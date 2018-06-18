@@ -1,9 +1,11 @@
 package com.huawei.support.sidekick.dao;
 
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import com.huawei.support.sidekick.bean.Department;
 import com.huawei.support.sidekick.bean.DepartmentExample;
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 public interface DepartmentMapper {
     long countByExample(DepartmentExample example);
