@@ -9,5 +9,8 @@
   	<typeAliases>
   		<package name="com.huawei.support.sidekick.bean"/>
   	</typeAliases>
+  	<plugins>
+  		<plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+  	</plugins>
   
   </configuration>
