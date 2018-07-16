@@ -17,7 +17,7 @@
     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
         connectionURL="jdbc:mysql://localhost:3306/sidekick-crud"
         userId="root"
-        password="123456">
+        password="654321">
     </jdbcConnection>
 
     <javaTypeResolver >
