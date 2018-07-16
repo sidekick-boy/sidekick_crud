@@ -11,7 +11,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>4.3.17.RELEASE</version>
+			<version>4.3.7.RELEASE</version>
 		</dependency>
 
 		<!--引入pageHelper分页插件 -->
@@ -33,7 +33,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>4.3.17.RELEASE</version>
+			<version>4.3.7.RELEASE</version>
 		</dependency>
 
 		<!--Spring-test -->
@@ -48,7 +48,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
-			<version>4.3.17.RELEASE</version>
+			<version>4.3.7.RELEASE</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
