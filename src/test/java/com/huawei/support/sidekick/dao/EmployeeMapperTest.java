@@ -2,7 +2,7 @@
  * Project Name:sidekick_crud  
  * File Name:EmployeeMapperTest.java  
  * Package Name:com.huawei.support.sidekick.dao  
- * Date:2018Äê6ÔÂ18ÈÕÉÏÎç11:19:49  
+ * Date:2018ï¿½ï¿½6ï¿½ï¿½18ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½11:19:49  
  * Copyright (c) 2018, chenzhou1025@126.com All Rights Reserved.  
  *  
 */  
@@ -18,15 +18,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.huawei.support.sidekick.bean.Employee;
 
-/**  
- * ClassName:EmployeeMapperTest <br/>  
- * Function: TODO ADD FUNCTION. <br/>  
- * Reason:   TODO ADD REASON. <br/>  
- * Date:     2018Äê6ÔÂ18ÈÕ ÉÏÎç11:19:49 <br/>  
- * @author   Administrator  
- * @version    
- * @since    JDK 1.8  
- * @see        
+/**
+ * å‘˜å·¥ç±»æµ‹è¯•ç”¨ä¾‹
+ * @author sidekick
+ *
+ * 2018å¹´8æœˆ8æ—¥
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:applicationContext.xml"})
@@ -57,16 +53,16 @@ public class EmployeeMapperTest {
 	@Test
 	public void testInsert() {
 		
-		Employee emp1 = new Employee(null, "jingli", "ÄÐ", "jingli@huawei.com");
+		Employee emp1 = new Employee(null, "jingli", "ï¿½ï¿½", "jingli@huawei.com");
 		empMapper.insert(emp1);
 		
 		Employee emp2 = new Employee(null, "xiaohong", "Å®" , "xiaohong@huawei.com", 5 , null);
 		empMapper.insert(emp2 );
 		
-		Employee emp3 = new Employee(null, "xiaoming", "ÄÐ", "xiaoming@huawei.com", 1 , null);
+		Employee emp3 = new Employee(null, "xiaoming", "ï¿½ï¿½", "xiaoming@huawei.com", 1 , null);
 		empMapper.insert(emp3 );
 		
-		Employee emp4 = new Employee(null, "xiaodong", "ÄÐ", "xiaodong@huawei.com", 3, null);
+		Employee emp4 = new Employee(null, "xiaodong", "ï¿½ï¿½", "xiaodong@huawei.com", 3, null);
 		empMapper.insert(emp4 );
 		
 		

@@ -4,9 +4,12 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.huawei.support.sidekick.bean.Employee;
 import com.huawei.support.sidekick.service.EmployeeService;
 /**
@@ -22,9 +25,13 @@ public class EmployeeController {
 	EmployeeService employeeService;
 
 	@RequestMapping("/emps")
-	public String getAllEmployee(@RequestParam(value = "pn", defaultValue = "1")Integer pn)
+	public String getAllEmployee(@RequestParam(value = "pn", defaultValue = "1")Integer pn, Model model)
 	{
-		List<Employee> empList = employeeService.getAllEmployeeWithDept();
+		PageHelper.startPage(pn, 5);
+		List<Employee> empList = employeeService.getAllEmployeeWithDept();		
+		PageInfo<Employee> pageInfo = new PageInfo<>(empList, 5);
+		model.addAttribute("pageInfo", pageInfo);
+		
 		return "empList";
 	}
 }

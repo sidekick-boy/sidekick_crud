@@ -2,14 +2,12 @@
  * Project Name:sidekick_crud  
  * File Name:DepartmentMapperTest.java  
  * Package Name:com.huawei.support.sidekick.dao  
- * Date:2018Äê6ÔÂ18ÈÕÉÏÎç10:46:42  
+ * Date:2018ï¿½ï¿½6ï¿½ï¿½18ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½10:46:42  
  * Copyright (c) 2018, chenzhou1025@126.com All Rights Reserved.  
  *  
 */  
   
 package com.huawei.support.sidekick.dao;
-
-import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -18,17 +16,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.huawei.support.sidekick.bean.Department;
-
-/**  
- * ClassName:DepartmentMapperTest <br/>  
- * Function: TODO ADD FUNCTION. <br/>  
- * Reason:   TODO ADD REASON. <br/>  
- * Date:     2018Äê6ÔÂ18ÈÕ ÉÏÎç10:46:42 <br/>  
- * @author   Administrator  
- * @version    
- * @since    JDK 1.8  
- * @see        
+/**
+ * éƒ¨é—¨ç±»æµ‹è¯•ç”¨ä¾‹
+ * @author sidekick
+ *
+ * 2018å¹´8æœˆ8æ—¥
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:applicationContext.xml"})
@@ -59,26 +51,6 @@ public class DepartmentMapperTest {
 
 	@Test
 	public void testInsert() {
-		Department dept1 = new Department();
-		dept1.setDeptName("¿ª·¢²¿");
-		
-		Department dept2 = new Department();
-		dept2.setDeptName("²âÊÔ²¿");
-		
-		Department dept3 = new Department();
-		dept3.setDeptName("ÔËÓª²¿");
-		
-		Department dept4 = new Department();
-		dept4.setDeptName("²É¹º²¿");
-		
-		Department dept5 = new Department();
-		dept5.setDeptName("ÈËÁ¦×ÊÔ´²¿");
-		
-		departmentMapper.insert(dept1);
-		departmentMapper.insert(dept2);
-		departmentMapper.insert(dept3);
-		departmentMapper.insert(dept4);
-		departmentMapper.insert(dept5);
 	}
 
 	@Test
