@@ -138,7 +138,18 @@
 				firstPageLi.addClass("disabled");
 				prePageLi.addClass("disabled");
 			}
-			
+			else
+			{
+				/*为元素添加点击翻页事件  */
+				firstPageLi.click(function(){
+					to_page(1);
+				});
+//	 			上一页
+				prePageLi.click(function(){
+					to_page(result.map.pageInfo.pageNum - 1);
+				});
+			}
+
 			var nextPageLi = $("<li></li>").append($("<a></a>").append("&raquo;"));
 			var lastPageLi = $("<li></li>").append($("<a></a>").append("末页").attr("href","#"));
 			
@@ -147,6 +158,16 @@
 				nextPageLi.addClass("disabled");
 				lastPageLi.addClass("disabled");
 			}
+			else
+			{
+				nextPageLi.click(function(){
+					to_page(result.map.pageInfo.pageNum + 1);
+				});
+				lastPageLi.click(function(){
+					to_page(result.map.pageInfo.pages);
+				});
+			}
+
 			
 			//添加首页和前一页 的提示
 			ul.append(firstPageLi).append(prePageLi);
