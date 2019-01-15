@@ -55,7 +55,7 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 	
-	<!-- 使用Restful风格的URL，将页面普通的Post请求转换为iDelete或Put请求 -->
+	<!-- 使用Restful风格的URL，将页面普通的Post请求转换为Delete或Put请求 -->
 	<filter>
 		<filter-name>HiddenHttpMethodFilter</filter-name>		
 		<filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>

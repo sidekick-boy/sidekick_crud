@@ -11,8 +11,14 @@ import java.util.Map;
  */
 public class Msg {
 
+	/**
+	 * 返回状态码
+	 */
 	private String code;
 	
+	/**
+	 * 返回消息
+	 */
     private String msg;
     
     private Map<String, Object> map = new HashMap<String, Object>();

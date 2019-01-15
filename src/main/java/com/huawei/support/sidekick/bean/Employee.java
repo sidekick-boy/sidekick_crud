@@ -1,16 +1,42 @@
 package com.huawei.support.sidekick.bean;
 
+/**
+ * 公司员工
+ * 
+ * @author sidekick
+ *
+ * 2019年1月15日
+ */
 public class Employee {
+	
+	/**
+	 * 工号
+	 */
 	private Integer empId;
 
+	/**
+	 * 员工姓名
+	 */
 	private String empName;
 
+	/**
+	 * 性别
+	 */
 	private String gender;
 
+	/**
+	 * 邮箱
+	 */
 	private String email;
 
+	/**
+	 * 所属部门Id
+	 */
 	private Integer dId;
 
+	/**
+	 *  所属部门
+	 */
 	private Department department;
 	
 	

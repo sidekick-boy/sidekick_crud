@@ -1,8 +1,21 @@
 package com.huawei.support.sidekick.bean;
 
+/**
+ * 员工所属部门
+ * 
+ * @author sidekick
+ *
+ * 2019年1月15日
+ */
 public class Department {
+	/**
+	 * 部门Id
+	 */
 	private Integer deptId;
 
+	/**
+	 * 部门名称
+	 */
 	private String deptName;
 
 	public Department(Integer deptId, String deptName) {
