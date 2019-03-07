@@ -118,13 +118,7 @@
 		<include refid="WithDept_Column_List" />
 		FROM tbl_emp t1, tbl_dept t2
 		WHERE t1.d_id = t2.`dept_id`
-		<if test="_parameter != null">
-			<include refid="Example_Where_Clause" />
-		</if>
-		<if test="orderByClause != null">
-			order by ${orderByClause}
-		</if>
-
+		order by t1.emp_id asc
 	</select>
 	<select id="selectByPrimaryKey"
 		parameterType="java.lang.Integer" resultMap="WithDeptResultMap">

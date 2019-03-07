@@ -25,16 +25,6 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService employeeService;
 
-//	@RequestMapping("/emps")
-//	public String getAllEmployee(@RequestParam(value = "pn", defaultValue = "1")Integer pn, Model model)
-//	{
-//		PageHelper.startPage(pn, 5);
-//		List<Employee> empList = employeeService.getAllEmployeeWithDept();		
-//		PageInfo<Employee> pageInfo = new PageInfo<>(empList, 5);
-//		model.addAttribute("pageInfo", pageInfo);
-//		
-//		return "empList";
-//	}
 	@RequestMapping("/emps")
 	@ResponseBody
 	public Msg getAllEmployee(@RequestParam(value = "pn", defaultValue = "1")Integer pn)
